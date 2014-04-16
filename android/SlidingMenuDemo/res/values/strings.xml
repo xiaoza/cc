@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ChaoShi</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="help1">
+Here is more help text that could be displayed to the user in
+a dialog. When the user clicks the Close button, the previous
+dialog is re-displayed to them.
+</string>
+
+</resources>

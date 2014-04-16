@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/header" 
+  	android:layout_width="match_parent" 
+  	android:layout_height="@dimen/header_height"
+  	android:background="@color/white" >
+  	
+  	<RelativeLayout 
+  	    android:id="@+id/main_head_logo_helper"
+  		android:layout_width="@dimen/header_height"
+		android:layout_height="@dimen/header_height"
+		android:clickable="true" >
+		<ImageView
+		    android:id="@+id/slidingmenu_btn"
+		    android:layout_width="24dp"
+		    android:layout_height="24dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="10dp"
+		    android:background="@drawable/slidingmenu_btn"
+		    android:clickable="false" />
+		<ImageView
+		    android:id="@+id/header_notice"
+		    android:layout_width="18dp"
+		    android:layout_height="18dp"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_marginTop="6dp"
+    	    android:layout_marginRight="6dp"
+		    android:src="@null"
+		    android:clickable="false" />
+  	</RelativeLayout>
+		  
+   	<TextView
+        android:id="@+id/main_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="全部活动"        
+        android:textColor="@color/graywhite"/>
+   	
+    <ImageButton
+    	android:id="@+id/header_uface"
+  		android:layout_width="@dimen/header_height"
+		android:layout_height="@dimen/header_height"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="5dp"
+		android:background="@null"/>
+   	
+</RelativeLayout>

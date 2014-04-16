@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    
+    <include layout="@layout/header"/>
+    
+    <fragment class="com.zhiyuanyidong.chaoshi.Fragment.CategoryFragment"
+        android:id="@+id/product_categories"
+        android:layout_weight="1"
+        android:layout_width="0px"
+        android:layout_height="match_parent"/>
+    
+    <FrameLayout
+        android:id="@+id/product_list"
+        android:layout_weight="2"
+        android:layout_width="0px"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>
