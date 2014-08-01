@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/slidemenubackcolor"
+    android:orientation="vertical">
+
+    <!-- 设置title栏 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:background="@color/slidemenubackcolor"
+        android:gravity="center_vertical" >
+        
+        <!-- 用户头像 -->
+        <ImageButton
+            android:id="@+id/slidingmenu_userface"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" 
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/slidingmenu_usertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/lightblack"
+            android:textSize="@dimen/text_size_20" />
+        
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/slidingmenu_order"        
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/slidemenu_icon_home" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            android:text="@string/slidingmenu_order" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/slidingmenu_setting"        
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_10"
+            android:background="@drawable/slidemenu_icon_setting" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/space_20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            android:text="@string/slidingmenu_setting" />
+    </LinearLayout>
+    
+    
+</LinearLayout>
